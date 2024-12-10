@@ -1,5 +1,6 @@
 // Components/NavBar1.js
 import React from "react";
+import "./NavBar1.css"
 
 function NavBar1() {
   return (
@@ -7,8 +8,14 @@ function NavBar1() {
       <nav className="navbar navbar-dark bg-dark">
         <div className="container-fluid">
           <a className="navbar-brand " href="/">
-            News Geek
+            News
           </a>
+          <footer>
+            -made by{" "}
+            <a href="https://olakunle-joseph-portfolio.netlify.app" target="_blank">
+              Olakunle Joseph
+            </a>
+          </footer>
         </div>
       </nav>
     </div>

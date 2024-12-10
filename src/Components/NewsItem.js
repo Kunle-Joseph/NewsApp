@@ -1,6 +1,7 @@
 // Components/NewsItem.js
 
 import React from "react";
+import "./NewsItem.css";
 
 function NewsItem(props) {
   let { desc, title, imageURL, newsUrl, sourceName } = props;

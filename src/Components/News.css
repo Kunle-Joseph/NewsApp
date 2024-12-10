@@ -1,0 +1,138 @@
+.container {
+  max-width: 1200px; /* Restrict the container width */
+  margin: 0 auto; /* Center the container */
+  padding: 1rem; /* Add some padding */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Add spacing between rows and columns */
+  justify-content: center; /* Center items horizontally */
+}
+
+.col-md-4 {
+  flex: 0 0 calc(33.333% - 1rem); /* Each column takes up one-third of the row minus the gap */
+  max-width: calc(33.333% - 1rem);
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 calc(50% - 1rem); /* Adjust columns to 2 per row on smaller screens */
+    max-width: calc(50% - 1rem);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .col-md-4 {
+    flex: 0 0 100%; /* Full-width columns on very small screens */
+    max-width: 100%;
+  }
+}
+
+.text-center {
+  text-align: center;
+  color: #555;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.loader {
+  font-size: 1.25rem;
+  color: #007bff;
+  text-align: center;
+}
+
+.end-message {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --card-background: #f8f9fa;
+  --btn-background: #007bff;
+  --btn-text-color: #ffffff;
+}
+
+body.dark-mode {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --card-background: #1e1e1e;
+  --btn-background: #007bff;
+  --btn-text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card {
+  background-color: var(--card-background);
+  color: var(--text-color);
+}
+
+.btn {
+  background-color: var(--btn-background);
+  color: var(--btn-text-color);
+}:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --card-background: #f8f9fa;
+  --card-text-color: #333333;
+  --btn-background: #007bff;
+  --btn-text-color: #ffffff;
+}
+
+body.dark-mode {
+  --background-color: #121212; /* Dark background */
+  --text-color: #e0e0e0; /* Light gray text for general content */
+  --card-background: #1e1e1e; /* Dark background for cards */
+  --card-text-color: #e0e0e0; /* Light gray for card text */
+  --btn-background: #007bff; /* Keep button blue */
+  --btn-text-color: #ffffff; /* Button text remains white */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card {
+  background-color: var(--card-background);
+  color: var(--card-text-color);
+  border: none; /* Remove card border for a cleaner look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  color: var(--card-text-color);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: var(--card-text-color);
+  text-align: justify;
+}
+
+.text-body-secondary {
+  color: var(--card-text-color);
+  opacity: 0.7; /* Slightly lighter shade for secondary text */
+}
+
+.btn {
+  background-color: var(--btn-background);
+  color: var(--btn-text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
