@@ -12,7 +12,6 @@ function NavBar2() {
 				bg-body-tertiary"
       >
         <div className="container-fluid ">
-          
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
@@ -48,6 +47,11 @@ function NavBar2() {
               <li className="nav-item">
                 <Link className="nav-link" to={`/Science`}>
                   Science
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to={`/Gaming`}>
+                  Gaming
                 </Link>
               </li>
             </ul>

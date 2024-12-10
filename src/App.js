@@ -47,6 +47,10 @@ function App() {
                     path="/Science"
                     element={<News key="science" category="science" />}
                   />
+                  <Route
+                    path="/Gaming"
+                    element={<News key="gaming" category="gaming" />}
+                  />
                 </Routes>
               </div>
             </div>
