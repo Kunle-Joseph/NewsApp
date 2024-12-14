@@ -166,3 +166,29 @@ body {
     transform: rotate(360deg);
   }
 }
+
+/* Back to Top Floating Button */
+.floating-button {
+  position: fixed; /* Always fixed on the screen */
+  bottom: 20px;    /* Distance from the bottom edge */
+  right: 20px;     /* Distance from the right edge */
+  background-color: #007bff; /* Primary blue color */
+  color: white;    /* Text color */
+  border: none;    /* No border */
+  border-radius: 50%; /* Circle button */
+  width: 60px;     /* Button width */
+  height: 60px;    /* Button height */
+  font-size: 1.5rem; /* Arrow size */
+  display: flex;   /* Flexbox for centering */
+  align-items: center; /* Vertically centered content */
+  justify-content: center; /* Horizontally centered content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow for floating effect */
+  cursor: pointer; /* Pointer on hover */
+  z-index: 1000;   /* Ensure it's above all elements */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.floating-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.1); /* Slight zoom-in effect */
+}

@@ -52,3 +52,9 @@ body.dark-mode {
   font-weight: bold;
   border-bottom: 2px solid var(--navbar-active-color);
 }
+
+.navbar .nav-link.active-link {
+  color: var(--navbar-active-color);
+  font-weight: bold;
+  border-bottom: 2px solid var(--navbar-active-color);
+}

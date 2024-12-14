@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import NewsItem from "./NewsItem";
 import InfiniteScroll from "react-infinite-scroll-component";
 import "./News.css";
+import NavBar1 from "./NavBar1";
+import NavBar2 from "./NavBar2";
 
 function News(props) {
   const [darkMode, setDarkMode] = useState(false);
@@ -35,6 +37,14 @@ function News(props) {
     document.body.classList.toggle("dark-mode", !darkMode);
   };
 
+  // Scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div>
       {/* Show animation while loading */}
@@ -51,7 +61,6 @@ function News(props) {
               {darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
             </button>
           </div>
-
           <InfiniteScroll
             dataLength={articles.length}
             next={resultNews}
@@ -80,7 +89,12 @@ function News(props) {
                 })}
               </div>
             </div>
-          </InfiniteScroll>
+          </InfiniteScroll>{" "}
+          {/* Back to Top Button */}
+          {/* Back to Top Floating Button */}
+          <button className="floating-button" onClick={scrollToTop}>
+            ⬆
+          </button>
         </>
       )}
     </div>
